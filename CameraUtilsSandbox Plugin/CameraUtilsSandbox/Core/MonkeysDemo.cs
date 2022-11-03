@@ -50,7 +50,7 @@ namespace CameraUtilsSandbox {
 
             var monkeyObject = Instantiate(BundleLoader.MonkeyPrefab, rootTransform, false);
 
-            labelObject.SetLayer(VisibilityLayer.AlwaysVisible);
+            labelObject.SetLayer(VisibilityLayer.AlwaysVisibleAndReflected);
             monkeyObject.SetLayer(visibilityLayer);
             return rootObject;
         }
