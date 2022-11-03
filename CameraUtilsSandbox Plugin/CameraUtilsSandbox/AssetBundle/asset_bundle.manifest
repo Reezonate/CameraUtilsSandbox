@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 981220793
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0e5e710f06911f4926e96d1a3fb33399
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 1f5f5e37b48815503fb4179242234c0c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/CameraUtilsSandbox/4_Materials/InvertPostProcess.mat
+- Assets/CameraUtilsSandbox/6_Geometry/PostProcessQuad.fbx
+- Assets/CameraUtilsSandbox/1_Prefabs/MonkeyPrefab.prefab
+Dependencies: []
