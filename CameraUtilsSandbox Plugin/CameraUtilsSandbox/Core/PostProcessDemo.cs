@@ -21,8 +21,8 @@ namespace CameraUtilsSandbox {
         }
 
         public void Dispose() {
-            _commandBuffer.Release();
             CamerasManager.UnRegisterCameraEffect(this);
+            _commandBuffer.Release();
         }
 
         #endregion
