@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using Zenject;
 
+//InvertPostProcess shader: https://github.com/Reezonate/CameraUtilsSandbox/blob/master/CameraUtilsSandbox%20Bundle/Assets/CameraUtilsSandbox/3_Shaders/InvertPostProcess.shader
+
 namespace CameraUtilsSandbox {
     [UsedImplicitly]
     public class PostProcessDemo : IInitializable, IDisposable, ICameraEffect {
