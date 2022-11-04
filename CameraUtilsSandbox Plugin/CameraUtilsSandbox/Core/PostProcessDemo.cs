@@ -33,11 +33,11 @@ namespace CameraUtilsSandbox {
             return registeredCamera.CameraFlags.HasFlag(CameraFlags.FirstPerson) && !registeredCamera.CameraFlags.HasFlag(CameraFlags.Mirror);
         }
 
-        public void OnAddedToCamera(RegisteredCamera registeredCamera) {
+        public void HandleAddedToCamera(RegisteredCamera registeredCamera) {
             registeredCamera.Camera.AddCommandBuffer(CameraEvent.AfterImageEffects, _commandBuffer);
         }
 
-        public void OnRemovedFromCamera(RegisteredCamera registeredCamera) {
+        public void HandleRemovedFromCamera(RegisteredCamera registeredCamera) {
             registeredCamera.Camera.RemoveCommandBuffer(CameraEvent.AfterImageEffects, _commandBuffer);
         }
 
