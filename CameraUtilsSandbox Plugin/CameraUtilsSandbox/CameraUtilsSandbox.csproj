@@ -89,6 +89,11 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="AssetBundle\BundleLoader.cs" />
+        <Compile Include="CameraOverlayTest\Composition.cs" />
+        <Compile Include="CameraOverlayTest\CompositionImageEffect.cs" />
+        <Compile Include="CameraOverlayTest\CompositionManagerSO.cs" />
+        <Compile Include="CameraOverlayTest\CompositionTest.cs" />
+        <Compile Include="CameraOverlayTest\OverlayCamera.cs" />
         <Compile Include="Core\PostProcessDemo.cs" />
         <Compile Include="Core\MonkeysDemo.cs" />
         <Compile Include="Installers\OnAppInstaller.cs" />

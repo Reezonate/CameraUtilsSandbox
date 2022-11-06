@@ -1,5 +1,6 @@
 using System;
 using System.Reflection;
+using CameraOverlayTest;
 using UnityEngine;
 
 namespace CameraUtilsSandbox {
@@ -32,11 +33,13 @@ namespace CameraUtilsSandbox {
         public static GameObject MonkeyPrefab;
         public static Mesh PostProcessQuad;
         public static Material InvertPostProcessMaterial;
+        public static CompositionManagerSO CompositionManager;
 
         private static void LoadAssets(AssetBundle assetBundle) {
             MonkeyPrefab = assetBundle.LoadAsset<GameObject>("MonkeyPrefab");
             PostProcessQuad = assetBundle.LoadAsset<Mesh>("PostProcessQuad");
             InvertPostProcessMaterial = assetBundle.LoadAsset<Material>("InvertPostProcess");
+            CompositionManager = assetBundle.LoadAsset<CompositionManagerSO>("CompositionManager");
         }
 
         #endregion

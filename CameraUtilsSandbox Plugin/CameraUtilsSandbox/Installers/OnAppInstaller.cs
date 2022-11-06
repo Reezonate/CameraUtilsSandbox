@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using CameraOverlayTest;
+using JetBrains.Annotations;
 using Zenject;
 
 namespace CameraUtilsSandbox.Installers {
@@ -6,7 +7,8 @@ namespace CameraUtilsSandbox.Installers {
     public class OnAppInstaller : Installer<OnAppInstaller> {
         public override void InstallBindings() {
             Container.Bind<MonkeysDemo>().FromNewComponentOnRoot().AsSingle().NonLazy();
-            Container.BindInterfacesAndSelfTo<PostProcessDemo>().AsSingle();
+            // Container.BindInterfacesAndSelfTo<PostProcessDemo>().AsSingle();
+            Container.BindInterfacesAndSelfTo<CompositionTest>().AsSingle();
         }
     }
 }
