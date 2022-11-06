@@ -3,6 +3,7 @@
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _MaskTex ("MaskTex", 2D) = "white" {}
         
         _Cam0Tex ("Cam0Tex", 2D) = "white" {}
         _Cam1Tex ("Cam1Tex", 2D) = "white" {}

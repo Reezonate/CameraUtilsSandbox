@@ -1,6 +1,7 @@
 // <----- PROPERTIES -----------------------------------------------------------------------------------
 
 sampler2D _MainTex;
+sampler2D _MaskTex;
 
 sampler2D _Cam0Tex;
 sampler2D _Cam1Tex;
@@ -21,8 +22,10 @@ float4 overlay_camera(float4 source_color, float2 uv, sampler2D camera_texture, 
         (uv.y - camera_rect.y) / camera_rect.w
     );
     const bool out_of_bounds = camera_uv.x < 0 || camera_uv.x > 1 || camera_uv.y < 0 || camera_uv.y > 1;
+    
     const float4 col = tex2D(camera_texture, camera_uv);
-    return lerp(col, source_color, out_of_bounds);
+    const float4 mask = tex2D(_MaskTex, camera_uv).r * !out_of_bounds;
+    return lerp(source_color, col, mask);
 }
 
 // <----- DATA STRUCTS ---------------------------------------------------------------------------------
