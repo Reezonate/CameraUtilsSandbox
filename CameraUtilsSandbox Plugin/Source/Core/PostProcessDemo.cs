@@ -30,7 +30,7 @@ namespace CameraUtilsSandbox {
         #region ICameraEffect
 
         public bool IsSuitableForCamera(RegisteredCamera registeredCamera) {
-            return registeredCamera.CameraFlags.HasFlag(CameraFlags.FirstPerson) && !registeredCamera.CameraFlags.HasFlag(CameraFlags.Mirror);
+            return !registeredCamera.CameraFlags.HasFlag(CameraFlags.Mirror);
         }
 
         public void HandleAddedToCamera(RegisteredCamera registeredCamera) {

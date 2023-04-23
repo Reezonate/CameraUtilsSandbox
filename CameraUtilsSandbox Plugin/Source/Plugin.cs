@@ -17,6 +17,7 @@ namespace CameraUtilsSandbox {
             Log = logger;
             BundleLoader.Initialize();
             zenjector.Install<OnAppInstaller>(Location.App);
+            zenjector.Install<OnGameInstaller>(Location.GameCore);
         }
 
         #endregion
